@@ -79,12 +79,46 @@
     <header id="headermayorista">
         <h2 class="h2Mayorista">¿Querés trabajar con nosotros?</h2>
     </header>
-	<div id="textMayorista1">
-		<p>Contamos con diversas vías de comunicación para tu mejor comodidad. <br> Podes hacerlo por WhatsApp, vía EMail o acercandote a nuestro local comercial ubicado en calle Alsina, esquina Echague.</comodidas></p>
-	</div>
-	<div id="textMayorista2">
-		<p>Si preferis que nosotros nos contactemos con vos, completa el siguiente formulario y lo haremos a la brevedad!</p>  
-	</div>
+    <div class="row" id="divTextos">
+        <div id="textMayorista1" class="col-md-6">
+		    <p>Contamos con diversas vías de comunicación para tu mejor comodidad. <br> Podes hacerlo por WhatsApp, vía EMail o acercandote a nuestro local comercial ubicado en calle Alsina, esquina Echague.</p>
+	    </div>
+        <div id="textMayorista2" class="col-md-6">
+            <p>Si preferis que nosotros nos contactemos con vos, completa el siguiente formulario y lo haremos a la brevedad!</p>  
+        </div>
+    </div>
+
+    <div id="formContacto" class="d-flex justify-content-center m-auto row">
+        <h2 id="h2form" class="col-md-6 col-lg-4">Formulario de contacto</h2>
+        <form action="info.php" class="col-md-6 col-lg-4">
+            <fieldset id="idform"  >
+                <input type="text" id="name" placeholder="Nombre y Apellido"><br>
+                <input type="text" id="instagram" placeholder="Perfil De Instagram"><br>
+                <input type="text" id="telefono" placeholder="Número de Telefono"><br>
+                <input type="email" id="email" placeholder="miemail@hotmail.com"><br>
+                <label for="comunicacion">Quiero que se me contacte vía:</label>
+                <select name="medio" id="">
+                    <option value="Llamada">Llamada por telefono</option>
+                    <option value="email">Correo Electronico</option>
+                    <option value="instagram">Instagram</option>
+                </select><br>
+                <label for="mensaje"><p>¿Cual es su consulta?</p></label><br> 
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea> <br>
+                <input type="reset" value="Cancelar">
+                <input type="Submit" value="Enviar Consulta">
+            </fieldset>		
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
 <div id="footer">
         <section id="footer1">
             <div id="footer1div1">
